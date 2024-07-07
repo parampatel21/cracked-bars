@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Clarum Take-Home Interview: Cracked Bars
 
-## Getting Started
+### Intro:
 
-First, run the development server:
+Hi Tommy/Anton! I've promptly named the result of the take-home assignment: 'Cracked Bars'. If you want to check out the app, look at the link:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+...or, if you'd like to compile it yourself, clone the repo and then run 'npm run dev' & 'npm install'. You'll need to create a .env.local in your root directory and put in your own Polygon API key for the variable: 'POLYGON_API_KEY='
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Important To Note:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- The API is rate-limited to 5 requests per minute. It will trigger the error boundary if more requests are made.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Features Implemented:
 
-## Learn More
+- Bar Chart w/ 20+ stocks
+- Ability to refine view with time length, time span
+- Ability to view 5000+ data points
+- Suspend, error boundary paradigms implemented
+- SSR-heavy implementation
+- Sleek interface, ability to see price, volume, H/L data points per timespan unit
 
-To learn more about Next.js, take a look at the following resources:
+### Caveats, To-dos (If I had more time):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Tailwind CSS cleanup/restructure (universal theming, maybe?), it's messy in some components right now with some redundancy.
+- I could have cached the data on first pull. Right now, the data is fetched from the API for every request combination. Had I more time, I would have fetched the largest set (1M, by minute) and then calculated the aggregates accordingly for whatever request was made.
+- The only point here I missed was the click-to-delete bar feature, which consequently I could have integrates
+- Better mobile interface could be integrated, performance is iffy at 15k+ datapoints
+- Standardize date formatting
