@@ -26,3 +26,4 @@ Hi Tommy/Anton! I've promptly named the result of the take-home assignment: 'Cra
 - The only point here I missed was the click-to-delete bar feature, which consequently I could have integrates
 - Better mobile interface could be integrated, performance is iffy at 15k+ datapoints
 - Standardize date formatting
+- 404 or route handling not set up
