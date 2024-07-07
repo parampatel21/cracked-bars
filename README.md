@@ -4,6 +4,8 @@
 
 Hi Tommy/Anton! I've promptly named the result of the take-home assignment: 'Cracked Bars'. If you want to check out the app, look at the link:
 
+https://cracked-bars.netlify.app/NVDA?timeLength=1Y&timespan=day
+
 ...or, if you'd like to compile it yourself, clone the repo and then run 'npm run dev' & 'npm install'. You'll need to create a .env.local in your root directory and put in your own Polygon API key for the variable: 'POLYGON_API_KEY='
 
 ### Important To Note:
