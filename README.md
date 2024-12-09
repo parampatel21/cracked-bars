@@ -1,8 +1,8 @@
-## Clarum Take-Home Interview: Cracked Bars
+## Cracked Bars
 
-### Intro:
+A stock bar graph built from scratch using Tailwind CSS and Next JS.
 
-Hi Tommy/Anton! I've promptly named the result of the take-home assignment: 'Cracked Bars'. If you want to check out the app, look at the link:
+Use it here:
 
 https://cracked-bars.netlify.app/NVDA?timeLength=1Y&timespan=day
 
